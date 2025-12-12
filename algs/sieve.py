@@ -16,7 +16,8 @@ def sieve(n: int) -> list[int]:
             primes.append(i)
     return primes
 
-n = 2 * int(1e5)
-s = sieve(n)
-print(len(s))
-print(s[:500])
+if __name__ == '__main__':
+    n = 2 * int(1e5)
+    s = sieve(n)
+    print(len(s))
+    print(s[:500])
